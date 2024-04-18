@@ -6,7 +6,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar md:py-2 fixed top-0 left-0 right-0 z-10">
         <header>
-          <img src={images.logo} alt="Logo for the site." width={180}/>
+          <img src={images.logo} alt="Logo for the site." width={120}/>
         <ul className='flex justify-center items-center gap-12'>
             <li><NavLink to={"/"}>Home</NavLink></li>
             <li><NavLink to={"/contact"}>Contact</NavLink></li>
