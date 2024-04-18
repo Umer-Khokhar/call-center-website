@@ -9,6 +9,7 @@ import storyIMG from "../assets/story.jpeg";
 import tickIMG from "../assets/tick.svg";
 import chooseUs from "../assets/choose-us.jpg";
 import contactMain from "../assets/contact-main.jpeg";
+import menuIcon from "../assets/menu.png";
 export default {
   logo,
   heroIMG,
@@ -21,4 +22,5 @@ export default {
   tickIMG,
   chooseUs,
   contactMain,
+  menuIcon
 };

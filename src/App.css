@@ -30,6 +30,9 @@
     background-color: transparent;
     backdrop-filter: blur(4px);
 }
+.menu-image {
+    display: none;
+}
 
 .navbar header {
     max-width: 1460px;
@@ -37,6 +40,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.navbar header > .logo {
+    width: 112px;
 }
 
 .navbar header li {
@@ -289,6 +296,15 @@
     justify-content: center;
     align-items: center;
     padding: .5rem 2.2rem;
+}
+
+.feature span {
+    color: var(--text-red);
+    font-weight: 600;
+}
+.feature h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .story__features .feature {
@@ -593,4 +609,283 @@ form .submit__btn {
     border-radius: 6px;
     width: 25%;
     font-weight: 500;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1024px) {
+    .home .header h1 {
+        font-size: 3rem;
+        line-height: 5rem;
+        margin: 2rem auto 1rem auto;
+        text-align: center;
+        width: 90%;
+    }
+    .home .plans {
+        flex-direction: column;
+    }
+    .home .plans > img {
+        position: relative;
+        transform: rotate(90deg);
+}
+   .plans-text h2 {
+       width: 100vw;
+       text-align: center;
+       padding: 1rem;
+       margin-bottom: 1rem;
+   }
+}
+
+@media screen and (max-width: 1200px) {
+    .navbar {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .trucks__section {
+        flex-direction: column;
+    }
+    .trucks__section img {
+        width: 90%;
+        margin: 0 auto;
+        height: 80%;
+    }
+    .trip__info::before {
+        display: none;
+    }   
+    .trip__info {
+        width: 100%;
+        text-align: center;
+    }
+    .trip__info h1 {
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+    .trip__container {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 724px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .navbar {
+        padding: 1rem;
+    }
+    .navbar .menu {
+        position: absolute;
+        z-index: 30;
+        right: 12%;
+        top: 50%;
+    }
+    .menu ul {
+        background-color: white;
+        padding: .7rem 1.5rem;
+
+    }
+    .menu ul li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 3rem;
+        width: 100%;
+        padding: .5rem 0rem;
+        border-bottom: 1px solid var(--bg-main-opacity);
+        color: black;
+    }
+    .menu-image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--text-red);
+        width: 35px;
+        border-radius: 100%;
+        padding: .5rem;
+        cursor: pointer;
+    }
+    .navbar header .menu-icon {
+        position: relative;
+        top: 2px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 30px;
+    }
+    .navbar header > .logo {
+        width: 95px;
+    }
+    .navbar header .list {
+        display: none;
+    }
+    .our__story__section {
+        flex-direction: column;
+    }
+    .our__story__section .story__info {
+        text-align: center;
+        width: 100%;
+    }
+    .our__story__section .story__image img {
+        width: 100%;
+        height: 60%;
+    }
+    .story__info h2 {
+      width: 100%;  
+    }
+    .story__info p {
+        width: 100%;
+    }
+    .story__info .learn-more {
+        width: 100%;
+        display: block;
+    }
+    .story__features {
+        flex-direction: column;
+    }
+    .story__features .feature {
+        width: 100%;
+    }
+    .feature.number__2 {
+        border-left: none;
+        border-top: 1px solid rgba(255, 0, 0, 0.429);
+        border-right: none;
+        padding-left: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        margin-top: 1rem;
+    }
+
+    .feature.number__3 {
+        border-left: none;
+        border-right: none;
+        border-top: 1px solid rgba(255, 0, 0, 0.429);
+        padding-left: 0;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+   .choose-us {
+    flex-direction: column-reverse;
+   }
+
+   .choose-us .big__image img {
+    right: 0;
+    width: 95%;
+    height: 80%;
+    margin: 0 auto;
+   }
+
+   .contact__info {
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100vw;
+    padding: 1rem;
+   }
+
+   .left-contact__info .all__contact {
+    width: 100%;
+   }
+   .contact__info .right-contact__info {
+    width: 100%;
+   }
+
+   .right-contact__info form input {
+    width: 100%;
+   }
+   form textarea {
+    width: 100%;
+   }
+   /* About  */
+   .about .upper__about {
+    padding-bottom: 1rem;
+    height: 100%;
+   }
+   .about .upper__about h1 {
+    font-size: 2.5rem;
+    text-align: center;
+   }
+   .middle__about {
+    padding: 1.5rem;
+   }
+
+   .middle__about h1 {
+    font-size: 1.8rem;
+    width: 100%;
+   }
+   .middle__about .middle__paragraphs {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+   }
+   .middle__paragraphs p {
+    width: 100%;
+   }
+
+
+   .lower__about .about__image {
+    width: 100%;
+    height: 80%;
+    padding: 1.5rem;
+   }
+   .lower__about .about__image img {
+    margin-bottom: 0;
+    margin-top: 0;
+   }
+   .optimize h1 {
+    font-size: 2rem;
+   }
+   .optimize p {
+    width: 100%;
+    font-size: 16px;
+   }
+}
+
+@media screen and (max-width: 500px) {
+    .home .header h1 {
+        font-size: 2rem;
+        line-height: 5rem;
+        margin: 2rem auto 1rem auto;
+        text-align: center;
+        width: 90%;
+    }
+    .home .plans {
+        flex-direction: column;
+    }
+    .home .plans > img {
+        position: relative;
+        transform: rotate(90deg);
+}
+   .plans-text h2 {
+       width: 100vw;
+       text-align: center;
+       padding: 0 1rem;
+       font-size: 1.4rem;
+       margin-bottom: 0rem;
+   }
+    .navbar header > img {
+        width: 70px;
+    }
+    .trip__container {
+        height: 400px;
+    }
+    .about .upper__about h1 {
+        font-size: 2rem;
+    }
+    .middle__about h1 {
+        font-size: 1.5rem;
+    }
+    .optimize h1 {
+        font-size: 1.5rem;
+    }
+    .optimize p {
+        font-size: 14px;
+        padding: 0 1rem;
+    }
+    form .submit__btn {
+        width: 100%;
+    }
 }

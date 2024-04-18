@@ -7,7 +7,7 @@ export const ChooseUs = ({tImg, bigImg}) => {
         <h1>Why Choose Us?</h1>
         <div>
           <div className="headings">
-            <img src={tImg} alt="Features image" width={21}/>
+            <img src={tImg} alt="Features image" width={21} loading="lazy"/>
             <h2>Customized Solutions</h2>
           </div>
           <p>
@@ -17,7 +17,7 @@ export const ChooseUs = ({tImg, bigImg}) => {
         </div>
         <div>
           <div className="headings">
-            <img src={tImg} alt="Features image" width={21}/>
+            <img src={tImg} alt="Features image" width={21} loading="lazy"/>
             <h2>24/7 Support</h2>
           </div>
           <p>
@@ -27,7 +27,7 @@ export const ChooseUs = ({tImg, bigImg}) => {
         </div>
         <div>
           <div className="headings">
-            <img src={tImg} alt="Features image" width={21}/>
+            <img src={tImg} alt="Features image" width={21} loading="lazy"/>
             <h2>Customer-Centric Approach</h2>
           </div>
           <p>
@@ -37,7 +37,7 @@ export const ChooseUs = ({tImg, bigImg}) => {
         </div>
       </div>
       <div className="big__image">
-        <img src={bigImg} alt="This is my choose us Imge." />
+        <img src={bigImg} alt="This is my choose us Imge."  loading="lazy"/>
       </div>
     </div>
   );

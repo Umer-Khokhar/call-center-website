@@ -5,7 +5,7 @@ export const OurStory = ({ storyIMG }) => {
     <div className="story__wrapper">
       <div className="our__story__section">
         <div className="story__image">
-          <img src={storyIMG} alt="This is my Story Image!" />
+          <img src={storyIMG} alt="This is my Story Image!" loading="lazy" />
         </div>
         <div className="story__info">
           <h2>Our Story</h2>
